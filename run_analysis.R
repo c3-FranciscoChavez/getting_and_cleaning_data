@@ -47,3 +47,4 @@ new_df = tbl_df(new_df)
 grouped_df <- new_df %>% group_by(activity,subject) %>% reframe(across(everything(), list(mean=mean)))
 
 write.csv(grouped_df, './final_dataset.csv')
+write.table(grouped_df, './final_dataset.txt', row.name=FALSE)
