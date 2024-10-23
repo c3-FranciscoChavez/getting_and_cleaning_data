@@ -4,6 +4,8 @@ library(dplyr)
 # Set the current directory
 data_dir = './UCI HAR Dataset'
 
+# These are some comments for branching
+
 # Define actual file names to be loaded
 train_X = paste(data_dir,'/train/X_train.txt',sep='')
 train_Y = paste(data_dir,'/train/Y_train.txt',sep='')
